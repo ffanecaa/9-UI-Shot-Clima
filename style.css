@@ -45,7 +45,7 @@ aside{
 	align-items: center;
 	grid-template-columns: 1fr 2fr;
 	gap: 10px;
-	text-shadow: 1px 2px 2px black;
+	text-shadow: 1px 2px 2px #19b1e9;
 }
 
 h1{
@@ -67,30 +67,31 @@ h2{
 	width: 70%;
 	background: none;
 	border-style: none;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #19b1e9;
 }
 
 .find input:hover{
-	color: #4eea02;
+	color:#19b1e9;
+}  /* no encuentro lo que hace*/
+.find input:placeholder{
+	color: rgb(28, 30, 138);
 }
 
-.find input:placeholder{
-	color: white;
-}
 
 .find input:focus{
-	font-size: 14px;
-	color: #4eea02;
+	font-size:1rem;
+	color: #19b1e9;
 	outline: none;
-	border-bottom: 1px solid #4eea02;
+	border-bottom: 1px solid #19b1e9;
 }
 
 .find button{
-	background-color: #ea6402;
+	background-color: #19b1e9;;
 	border-style: none;
-	width: 40px;
+	width: 50px;
 	height: 40px;
 	cursor: pointer;
+	font-weight: 700;
 }
 
 .find button:focus{
@@ -99,30 +100,32 @@ h2{
 
 .details{
 	height: 320px;
-	overflow-y: scroll;
+	overflow-y: scroll;  /* le doy scroll a todo el contenedorr*/
 }
-
+/* entiendo pseudoelemento*/ 
+/* doy caracteristicas al scroll 
+en este cas oque no se vea sino bajo*/
 .details::-webkit-scrollbar{
-	width: 10px;
-	background: none;
+	width: 20px;
+	background:none;
 }
-
+/* no se que interaccion tiene*/
 .details::-webkit-scrollbar-thumb{
-	background: rgba(255,255,255,0);
+	background: rgba(29, 107, 143, 0);
 	border-radius: 4px;
 }
-
+/* cuando toco el scroll le da color*/
 .details::-webkit-scrollbar-thumb:hover{
-	background: rgba(255,255,255,0.1);
+	background:rgb(55, 54, 54)
 }
-
+/*contenedor primera lista */
 .city-recently{
 	margin-bottom: 20px;
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid #19b1e9; /* genera linea inferior*/
 	padding-bottom: 20px;
 }
 
-.city-recently ul li{
+.city-recently ul li{  /* 	quitamos de coracion lista*/
 	list-style: none;
 	padding: 5px 0;
 }
@@ -138,7 +141,7 @@ h2{
 
 .weather-details{
 	margin-bottom: 20px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #19b1e9;
 	padding-bottom: 20px;
 }
 
